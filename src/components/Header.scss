@@ -13,17 +13,35 @@
 .header__container{
   position: relative;
   display: flex;
-  &::before{
-    @include styleBackground($bluelight, 0, 0);
-    z-index: -2;
-  }
+  justify-content: space-between;
+  align-items: center;
+  background-color: $greenLow;
   &::after{
-    @include styleBackground($blueDark, 0, 220px);
-    z-index: -1;
+    @include styleBackground($blueDark, 0, 290px);
+    z-index: 0;
   }
-
+  
   .header__image{
-    margin-left: 100px;
-    width: 400px;
+    margin-left: 150px;
+    width: 450px;
+    z-index: 1;
+  }
+  
+  .header__info {
+    z-index: 1;
+    color: $blueLight;
+    h2{
+      color: $greenLow;
+      font-size: 44px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    p{
+      font-size: 14px;
+      width: 220px;
+      span{
+        font-size: 20px;
+      }
+    }
   }
 }
