@@ -1,0 +1,20 @@
+@mixin styleRectangules($angle) {
+  position: absolute;
+  height: 90%;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  transform: rotate($angle);
+}
+.hexagon__background{
+  position: absolute;
+  z-index: 1;
+  div:nth-child(1){
+    @include styleRectangules(0deg);
+  }
+  div:nth-child(2){
+    @include styleRectangules(60deg)
+  }
+  div:nth-child(3){
+    @include styleRectangules(-60deg)
+  }
+}

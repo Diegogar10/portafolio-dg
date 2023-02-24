@@ -1,0 +1,13 @@
+.circle__background {
+  position: absolute;
+  background-color: #FFFFFF20;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circle__border {
+  position: absolute;
+  border: 5px solid #FFFFFF20;
+  border-radius: 50%;
+  z-index: 1;
+}
