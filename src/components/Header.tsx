@@ -13,7 +13,7 @@ const Header = () => {
         <h2>Soy Diego</h2>
         <p><span>Frontend Devoloper & Control Enginier </span></p>
         {/* <p>Bienvenidos a mi pagina personal. <br /> Quedate conmigo... te contare un poco de mi experiencia!</p> */}
-        <button>Acerca de mi</button>
+        <button>Ver portafolio</button>
       </section>
       <Circle r={240} x={60} y={120} />
       <Circle r={30} x={120} y={300} />

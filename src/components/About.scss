@@ -4,9 +4,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background: $blueDarkLight;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
   width: 100%;
-  height: 500px;
+  background: $blueDarkLight;
   border-top-left-radius: 35% 15%;
   z-index: -1;
 
@@ -19,5 +21,58 @@
     right: 0;
     background: $blueDarkLight;
     z-index: 2;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 45%;
+    min-width: 250px;
+    margin: 0 20px;
+
+    
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+      width: fit-content;
+      text-align: end;
+      padding: 5px;
+      padding-left: 0;
+      color: $blueLight;
+      border-bottom: 2.5px solid $greenLow;
+      border-radius: 2px;
+      margin-bottom: 30px;
+    }
+
+    p{
+      text-align:right;
+      line-height: 16px;
+      color: $blueLight;
+      font-size: 14px;
+    }
+  }
+  
+  figure {
+    width: 180px;
+    margin: 0 20px 0 10px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      border: 4px solid $greenLow;
+      top: 20px;
+      left: 20px;
+      bottom: -20px;
+      right: -30px;
+      z-index: -1;
+    }
+
+    img{
+      width: 100%;
+      object-fit: cover;
+      box-shadow: 0 0 2px #FFFFFF20; 
+      border: 4px solid $blueDark;
+    }
   }
 }
