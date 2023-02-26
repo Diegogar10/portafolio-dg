@@ -1,5 +1,6 @@
 import React from 'react';
 import imgPefil from '../assets/images/sinFondoPefil.png';
+import { Button } from './elements/Button';
 import Circle from './elements/Circle';
 import Hexagon from './elements/Hexagon';
 import './Header.scss';
@@ -13,7 +14,7 @@ const Header = () => {
         <h2>Soy Diego</h2>
         <p><span>Frontend Devoloper & Control Enginier </span></p>
         {/* <p>Bienvenidos a mi pagina personal. <br /> Quedate conmigo... te contare un poco de mi experiencia!</p> */}
-        <button>Ver portafolio</button>
+        <Button title='Ver portafolio' style='primary' route=''/>
       </section>
       <Circle r={240} x={60} y={120} />
       <Circle r={30} x={120} y={300} />
@@ -29,4 +30,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;

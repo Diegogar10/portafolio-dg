@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
+  padding: 35px 0;
   width: 100%;
   background: $blueDarkLight;
   border-top-left-radius: 35% 15%;
@@ -50,6 +50,12 @@
       line-height: 16px;
       color: $blueLight;
       font-size: 14px;
+      margin-bottom: 15px;
+    }
+    div {
+      display: flex;
+      width: 80%;
+      justify-content:space-between;
     }
   }
   
