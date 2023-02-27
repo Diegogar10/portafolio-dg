@@ -10,8 +10,8 @@ const About = () => {
     <main className='about__me'>
       <section>
         <h3>{dataHome.title}</h3>
-        {dataHome.description.map((data)=>(
-          <p>{data}</p>
+        {dataHome.description.map((data, key)=>(
+          <p key={key}>{data}</p>
         ))}
         <div>
           <Button title='Ver más...' style='secondary' route=''/>
@@ -23,7 +23,8 @@ const About = () => {
       </figure>
       <Circle r={30} x={180} y={30}/>
       <Circle r={20} x={178} y={37} fill='yes' line={2} />
-    </main>
+      <Hexagon l={110} x={450} y={-60} color='#ffffff09' line={11} pos={true}/>
+     </main>
   )
 }
 

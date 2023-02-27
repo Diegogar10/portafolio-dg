@@ -1,4 +1,12 @@
-export const dataAbout:{
+ import photo1 from '../assets/projects/portada/random1.jpg';
+ import photo2 from'../assets/projects/portada/random2.jpg';
+ import photo3 from'../assets/projects/portada/random3.png';
+ import photo4 from'../assets/projects/portada/random4.jpg';
+ import photo5 from'../assets/projects/portada/random5.jpg';
+ import photo6 from'../assets/projects/portada/random6.jpg';
+ import photo7 from'../assets/projects/portada/random7.jpg' ;
+ 
+ const dataAbout:{
   title: string,
   biografy: string[]
 } = {
@@ -15,7 +23,71 @@ export const dataHome:{
 } = {
   title: 'Acerca de mi',
   description:[
-    'Ingeniero en control, desarrollador Frontend y estudiante de desarrollo web, con más de 7 años de experiencia laborando en el campo de la programación y automatización industrial, habilidades en el manejor de frameworks y librerias como react, react native, angular, manejo en control con programacion en PLC, variadores de velocidad, driver de servomotores, comunicaciones idustriales, interfaces HMI y SCADA. Conocimientos en diseño de interfaces y experiencia de usuario, manejo de herramientas de diseño como ilustrator y figma. Manejor de versiones y dpcumentacion como git y github.',
-    'Una persona sociable, emprededora, autodidacta, con capacidad para trabajar en equipo, gusto por nuevas herramientas de prgramación, con hobbys como el futbol, viaja y conocer nuevas culturas.'
+    'Ingeniero en control, desarrollador Frontend y estudiante de desarrollo web, con más de 7 años de experiencia laborando en el campo de la programación y automatización industrial, habilidades en el manejor de frameworks y librerias como react, react native, angular, manejo en control con programacion en PLC, variadores de velocidad, driver de servomotores, comunicaciones idustriales, interfaces HMI y SCADA. Conocimientos en diseño de interfaces y experiencia de usuario, manejo de herramientas de diseño como ilustrator y figma. Manejo de versiones y documentación con git y github.',
+    'Una persona sociable, emprendedora, autodidacta, con capacidad para trabajar en equipo, gusto por nuevas herramientas de programación, con hobbys en el futbol, en viajar y conocer nuevas culturas.'
+  ]
+}
+
+export interface project {
+  id: number;
+  title: string;
+  images: any[];
+  age: string;
+  desciption: string;
+}
+
+export const projectsHome: {
+  projects: project[];
+} = {
+  projects:[
+    {
+      id: 1,
+      title:'titulo 1',
+      images:[photo1],
+      age: '2020',
+      desciption: 'lorem isu'
+    },
+    { 
+      id: 2,
+      title:'titulo 2',
+      images:[photo2],
+      age: '2020',
+      desciption: 'lorem isu'
+    },
+    { 
+      id: 3,
+      title:'titulo 3',
+      images:[photo3],
+      age: '2010',
+      desciption: 'lorem isu'
+    },
+    { 
+      id: 4,
+      title:'titulo 4',
+      images:[photo4],
+      age: '2023',
+      desciption: 'lorem isu'
+    },
+    { 
+      id: 5,
+      title:'titulo 5',
+      images:[photo5],
+      age: '2018',
+      desciption: 'lorem isu'
+    },
+    { 
+      id: 6,
+      title:'titulo 6',
+      images:[photo6],
+      age: '2022',
+      desciption: 'lorem isu'
+    },
+    {
+      id: 7,
+      title:'titulo 7',
+      images:[photo7],
+      age: '2019',
+      desciption: 'lorem isu'
+    }
   ]
 }

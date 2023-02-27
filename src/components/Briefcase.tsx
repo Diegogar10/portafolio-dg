@@ -1,12 +1,18 @@
 import React from 'react';
 import './Briefcase.scss';
 import Hexagon from './elements/Hexagon';
-
+import { projectsHome } from '../libs/infoPerson';
+import Project from './Project';
 export const Briefcase = () => {
   return (
     <div className='briefcase__container'>
-      <Hexagon l={110} x={-20} y={-60} color='#ffffff09' line={11} pos={true}/>
-      <Hexagon l={55} x={0} y={20} color='#ffffff10' line={9} pos={true}/>
+      <h2>Portafolio</h2>
+      <section className='projects__container'>
+      {projectsHome.projects.map((project, key)=>(
+        <Project key={project.id} {...project}/>
+      ))}
+      </section>
+      <Hexagon l={55} x={30} y={15} color='#ffffff10' line={9} pos={true}/>
     </div>
   )
 }
