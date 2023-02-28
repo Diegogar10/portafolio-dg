@@ -3,7 +3,6 @@
 
 .button__primary {
   background-color: $greenLow;
-  color: $blueDark;
   text-shadow: 0 0 2px #00000050;
   margin: 30px 0;
   font-size: 16px;
@@ -12,11 +11,22 @@
   font-weight: 500;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
+  
+  a{
+    color: $blueDark;
+    text-decoration: none;
+  }
 }
 .button__secondary {
   @extend .button__primary;
   background: none;
   border: 1px solid $greenLow;
-  color: $greenLow;
   padding: 9px;
+  cursor: pointer;
+  
+  a{
+    color: $greenLow;
+    text-decoration: none;
+  }
 }

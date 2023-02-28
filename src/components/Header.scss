@@ -18,9 +18,9 @@
   align-items: start;
   background-color: $greenLow;
   width: 100vw;
-
   overflow: hidden;
   border-bottom-right-radius: 40% 15%;
+  z-index: 2;
   &::after{
     @include styleBackground($blueDark, 0, 240px);
     z-index: 0;

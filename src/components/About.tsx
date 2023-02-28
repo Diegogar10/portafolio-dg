@@ -15,7 +15,7 @@ const About = () => {
         ))}
         <div>
           <Button title='Ver más...' style='secondary' route=''/>
-          <Button title='Contacto' style='primary' route=''/>
+          <Button title='Contacto' style='primary' route='#footer__container'/>
         </div>
       </section>
       <figure>
@@ -23,7 +23,6 @@ const About = () => {
       </figure>
       <Circle r={30} x={180} y={30}/>
       <Circle r={20} x={178} y={37} fill='yes' line={2} />
-      <Hexagon l={110} x={450} y={-60} color='#ffffff09' line={11} pos={true}/>
      </main>
   )
 }

@@ -10,7 +10,7 @@
   width: 100%;
   background: $blueDarkLight;
   border-top-left-radius: 35% 15%;
-  z-index: -1;
+  z-index: 0;
 
   &::after {
     content: '';
@@ -20,7 +20,6 @@
     left: 30%;
     right: 0;
     background: $blueDarkLight;
-    z-index: 2;
   }
 
   section {

@@ -6,6 +6,6 @@ export const Button = (
   :{title:string; style:'primary'|'secondary'; route:string}
   ) => {
   return (
-    <button className={`button__${style}`}>{title}</button>
+    <button className={`button__${style}`}><a href={route}>{title}</a></button>
   )
 }
