@@ -32,8 +32,10 @@
     display: grid;
     grid-template-rows: 1fr 2fr;
     gap: 18px;
+    color: $blueDarkLight;
     h3{
       grid-row-start: 1;
+      font-weight: 500;
       @extend .footer__title;
       padding: 0;
     }

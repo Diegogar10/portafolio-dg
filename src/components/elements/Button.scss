@@ -12,6 +12,8 @@
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  color: $blueDark;
+  text-decoration: none;
   
   a{
     color: $blueDark;
@@ -24,6 +26,8 @@
   border: 1px solid $greenLow;
   padding: 9px;
   cursor: pointer;
+  color: $greenLow;
+  text-decoration: none;
   
   a{
     color: $greenLow;

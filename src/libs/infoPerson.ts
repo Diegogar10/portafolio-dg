@@ -6,7 +6,7 @@
  import photo6 from'../assets/projects/portada/random6.jpg';
  import photo7 from'../assets/projects/portada/random7.jpg' ;
  
- const dataAbout:{
+export const dataAbout:{
   title: string,
   biografy: string[]
 } = {

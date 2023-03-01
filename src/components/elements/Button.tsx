@@ -2,10 +2,17 @@ import React from 'react';
 import './Button.scss';
 
 export const Button = (
-  {title, style, route}
-  :{title:string; style:'primary'|'secondary'; route:string}
+  {title, style, route, fn}
+  :{title:string; style:'primary'|'secondary'; route?:string, fn?:any}
   ) => {
+
+    
+    const handleButton = () => {
+      fn();
+    }
+
   return (
-    <button className={`button__${style}`}><a href={route}>{title}</a></button>
+    route && <button className={`button__${style}`}><a href={route}>{title}</a></button>
+      || <button className={`button__${style}`} onClick={handleButton}>{title}</button>
   )
 }
