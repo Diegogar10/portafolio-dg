@@ -15,13 +15,13 @@ export const Biography = () => {
   }
 
   return (
-    <div>
+    <div className='bigraphy__container'>
       <h3>Biografia</h3>
       {dataAbout.biografy.map((data, key)=>(
         <p key={key}>{data}</p>
       ))}
       <button onClick={handleButton}>
-        <HighlightOffIcon/>
+        <HighlightOffIcon sx={{fontSize:'32px'}}/>
       </button>
     </div>
   )

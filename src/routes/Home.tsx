@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
 import About from '../components/About';
 import { Biography } from '../components/Biography';
-import { Briefcase } from '../components/Briefcase';
+import { Portfolio } from '../components/Portfolio';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { AppContext } from '../context/AppContext';
+import PortfolioDetail from '../components/PortfolioDetail';
 
 const Home = () => {
   const {state} = useContext(AppContext);
@@ -15,7 +16,7 @@ const Home = () => {
     <>
       <Header/>
       { !state.biography && <About/> || <Biography/>}
-      <Briefcase/>
+      { !state.portfolio.active && <Portfolio/> || <PortfolioDetail/> }
       <Footer/>
     </>
   )

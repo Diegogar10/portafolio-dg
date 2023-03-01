@@ -33,7 +33,10 @@ export interface project {
   title: string;
   images: any[];
   age: string;
-  desciption: string;
+  goal: string;
+  summary: string;
+  desciption: string[];
+  skills: string[];
 }
 
 export const projectsHome: {
@@ -43,51 +46,72 @@ export const projectsHome: {
     {
       id: 1,
       title:'titulo 1',
-      images:[photo1],
+      images:[photo1, photo2, photo3, photo4, photo5, photo6],
       age: '2020',
-      desciption: 'lorem isu'
+      goal: 'lograr',
+      summary: 'lorem isu',
+      desciption: ['lorem isu','lorem asu'],
+      skills: ['API REST', 'Javascript'],
     },
     { 
       id: 2,
       title:'titulo 2',
       images:[photo2],
       age: '2020',
-      desciption: 'lorem isu'
+      goal: 'alcanzar',
+      summary: 'lorem isu',
+      desciption: ['lorem isu'],
+      skills: ['API REST', 'Javascript'],
     },
     { 
       id: 3,
       title:'titulo 3',
       images:[photo3],
       age: '2010',
-      desciption: 'lorem isu'
+      goal: 'permitir',
+      summary: 'lorem isu',
+      desciption: ['lorem isu'],
+      skills: ['API REST', 'Javascript'],
     },
     { 
       id: 4,
       title:'titulo 4',
       images:[photo4],
       age: '2023',
-      desciption: 'lorem isu'
+      goal: 'Controlar',
+      summary: 'lorem isu',
+      desciption: ['lorem isu'],
+      skills: ['API REST', 'Javascript'],
     },
     { 
       id: 5,
       title:'titulo 5',
       images:[photo5],
       age: '2018',
-      desciption: 'lorem isu'
+      goal: 'aprender',
+      summary: 'lorem isu',
+      desciption: ['lorem isu'],
+      skills: ['API REST', 'Javascript'],
     },
     { 
       id: 6,
       title:'titulo 6',
       images:[photo6],
       age: '2022',
-      desciption: 'lorem isu'
+      goal: 'practicar',
+      summary: 'lorem isu',
+      desciption: ['lorem isu'],
+      skills: ['API REST', 'Javascript'],
     },
     {
       id: 7,
       title:'titulo 7',
       images:[photo7],
       age: '2019',
-      desciption: 'lorem isu'
+      goal: 'enseñar',
+      summary: 'lorem isu',
+      desciption: ['lorem isu'],
+      skills: ['API REST', 'Javascript'],
     }
   ]
 }

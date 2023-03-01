@@ -1,11 +1,11 @@
 @import '../styles/globals';
-.briefcase__container {
+.portfolio__container {
   position: relative;
   background: $blueDark;
   width: 100vw;
   padding: 20px 30px 20px 10px;
 
-  .briefcase__title{ 
+  .portfolio__title{ 
     color: $blueLight;
     font-weight: 700;
     font-size: 24px;
