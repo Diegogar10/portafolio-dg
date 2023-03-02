@@ -13,11 +13,12 @@
 
     div {
       .footer__title {
-        color: $blueDarkLight;
+        color: $blueLight;
         font-family: $mainFont;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 18px;
         padding: 15px;
+        text-shadow: 0 0 3px #00000050;
       }
       a{
         color: $blueDarkLight;
@@ -37,6 +38,9 @@
       grid-row-start: 1;
       font-weight: 500;
       @extend .footer__title;
+      font-size: 18px;
+      color: $blueLight;
+      text-shadow: 0 0 3px #00000050;
       padding: 0;
     }
     div{

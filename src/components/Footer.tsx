@@ -17,13 +17,13 @@ const Footer = () => {
       <section className='footer__socialMedia' >
         <div>
           <h3 className='footer__title'>Redes Sociales</h3>
-          <a href='#'>
+          <a href='https://www.instagram.com/diegogar92/'>
             <InstagramIcon sx={{...styles}}/>
           </a>
-          <a href=''>
+          <a href='https://www.linkedin.com/in/diego-garcia-557361190/'>
             <LinkedInIcon sx={{...styles}}/>
           </a>
-          <a href=''>
+          <a href='https://github.com/Diegogar10'>
             <GitHubIcon sx={{...styles}}/>
           </a>
         </div>

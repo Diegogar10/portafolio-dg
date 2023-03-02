@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import {dataAbout} from '../libs/infoPerson';
+import { AppContext } from '../context/AppContext';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import './Biography.scss';
-import { AppContext } from '../context/AppContext';
 
 
 export const Biography = () => {

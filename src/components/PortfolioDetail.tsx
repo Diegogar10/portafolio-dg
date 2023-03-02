@@ -1,8 +1,10 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
-import { project, projectsHome } from '../libs/infoPerson';
+import { projectsHome } from '../libs/infoPerson';
 import GaleryCarrusel from './elements/GaleryCarrusel';
+import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import './PortfolioDetail.scss';
+import { useRamdomColor } from '../hooks/useRamdomColor';
 
 const PortfolioDetail = () => {
   
@@ -37,11 +39,13 @@ const PortfolioDetail = () => {
       </div>
       <div className='projectDetail__skills'>
         <h4>Habilidades</h4>
-        <div>
-          {skills.map((skill, key)=><p key={key}>{skill}</p>)}
+        <div className='skills__container'>
+          {skills.map((skill, key)=> <p style={{background:useRamdomColor()}} key={key}>{skill}</p>)}
         </div>
       </div>
-      <button className='button__back' onClick={handleClick}> devolver </button>
+      <button className='button__back' onClick={handleClick}>
+        <HighlightOffIcon sx={{fontSize:'32px'}}/>
+      </button>
     </div>
   )
 }
