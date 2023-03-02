@@ -44,3 +44,11 @@
     color: $blueLight;
   }
 }
+
+.button__optional {
+  @extend .button__primary;
+  background: $blueDark;
+  a{
+    color: $greenLow;
+  }
+}

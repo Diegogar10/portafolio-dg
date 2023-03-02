@@ -9,7 +9,7 @@ const Hexagon = (
   const styles={
     borderColor: color,
     borderWidth: line,
-    width: (0.5*l)+(line/1.5),
+    width: (0.4*l)+(line/1.5),
   }
 
   return (

@@ -3,7 +3,7 @@ import './Button.scss';
 
 export const Button = (
   {title, style, route, fn}
-  :{title:string; style:'primary'|'secondary'; route?:string, fn?:any}
+  :{title:string; style:'primary'|'secondary'|'optional'; route?:string, fn?:any}
   ) => {
 
     

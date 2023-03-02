@@ -2,12 +2,11 @@
 
 .projectDetail__container {
   position: relative;
-  width: 100vw;
-  height: 600px;
+  width: 100%;
   display: grid;
   gap: 20px;
   padding: 30px 10px;
-  grid-template: 1fr 5fr 3fr / 2fr 3fr ;
+  grid-template: 1fr 5fr 2fr / 2fr 3fr ;
   background: $blueDark;
   color: $blueLight;
 
@@ -78,5 +77,35 @@
     font-size: 16px;
     font-weight: 300;
     padding: 0 5px;
+  }
+}
+@media (max-width: 572px) { 
+  .projectDetail__container {
+    
+    display: flex;
+    flex-direction: column;
+  
+    h3{
+      text-align: center;
+    }
+    
+    h4 {
+      text-align: start;
+      padding-left: 10px;
+    }
+     
+    .projectDetail__galery {
+      width: 80%;
+      margin: 0 auto;
+      h4 {
+        text-align: center;
+      }
+    }
+  
+     .projectDetail__skills {
+      h4{
+        text-align: center;
+      } 
+     }
   }
 }

@@ -11,10 +11,12 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     
-    margin: 0;
+    margin:0 auto;
     padding: 0;
     width: 100vw;
+    max-width: 1024px;
     overflow-x: hidden;
+    box-shadow: 0 0 10px #00000080;
     
 }
 

@@ -2,8 +2,8 @@
 .portfolio__container {
   position: relative;
   background: $blueDark;
-  width: 100vw;
-  padding: 20px 30px 20px 10px;
+  width: 100%;
+  padding: 20px;
 
   .portfolio__title{ 
     color: $blueLight;
@@ -17,8 +17,25 @@
   .projects__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
     gap: 20px;
     place-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio__container {
+    .projects__container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .portfolio__container {
+    .projects__container {
+      grid-template-columns: repeat(1, 1fr);
+      padding-right: 5px;
+    }
   }
 }
