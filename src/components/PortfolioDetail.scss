@@ -17,6 +17,11 @@
     font-weight: 500;
     color: $greenLow;
   }
+  p{
+    padding: 8px 0;
+    text-align: justify;
+    margin-bottom: 10px;
+  }
    .projectDetail__goal{
     grid-row-start: 1 ;
     grid-column-start: 2 ;
@@ -27,7 +32,17 @@
     grid-row-start: 2;
     grid-column-start: 2 ;
     grid-row-end: 4;
-
+    h5{
+      font-size: 16px;
+      font-weight: 400;
+      padding: 10px;
+      color: $blueLight;
+    }
+    a{
+      padding-left: 5px;
+      color: $blueLight;
+      cursor: pointer;
+    }
    }
 
    .projectDetail__galery {
@@ -46,6 +61,7 @@
       p {
         padding: 8px;
         margin: 0 6px;
+        margin-bottom: 10px;
         font-size: 14px;
         font-weight: 500;
         color: $blueDarkLight;
@@ -83,6 +99,7 @@
   .projectDetail__container {
     
     display: flex;
+    justify-content: center;
     flex-direction: column;
   
     h3{
@@ -106,6 +123,10 @@
       h4{
         text-align: center;
       } 
+     }
+     .button__back {
+      top: 5px;
+      right: 5px;
      }
   }
 }

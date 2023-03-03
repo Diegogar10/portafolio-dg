@@ -3,6 +3,8 @@ import { AppContext } from '../context/AppContext';
 import { projectsHome } from '../libs/infoPerson';
 import GaleryCarrusel from './elements/GaleryCarrusel';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import './PortfolioDetail.scss';
 import { useRamdomColor } from '../hooks/useRamdomColor';
 
@@ -17,6 +19,7 @@ const PortfolioDetail = () => {
     goal,
     desciption,
     skills,
+    link
   } = projectsHome.projects[indexProject];
  
   const handleClick = () =>{
@@ -33,6 +36,17 @@ const PortfolioDetail = () => {
       <div className='projectDetail__description'>
         <h4>Descripción</h4>
         {desciption.map((data,key)=><p key={key}>{data}</p>)}
+        {link && 
+        <>
+          <h5>Ver más:</h5>
+          <a href={link[0]}>
+            <GitHubIcon/>
+          </a>
+          <a href={link[1]}>
+            <OpenInNewIcon/>
+          </a>
+        </>
+        }
       </div>
       <div className='projectDetail__galery'>
         <GaleryCarrusel images={images} arrowSize='28px'/>

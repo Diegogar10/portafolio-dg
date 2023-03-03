@@ -1,10 +1,17 @@
- import photo1 from '../assets/projects/portada/random1.jpg';
- import photo2 from'../assets/projects/portada/random2.jpg';
- import photo3 from'../assets/projects/portada/random3.png';
- import photo4 from'../assets/projects/portada/random4.jpg';
- import photo5 from'../assets/projects/portada/random5.jpg';
- import photo6 from'../assets/projects/portada/random6.jpg';
- import photo7 from'../assets/projects/portada/random7.jpg' ;
+ import P1_Photo1 from '../assets/projects/AppFinanzas/Portada.png';
+ import P1_Photo2 from '../assets/projects/AppFinanzas/IngresoDatos.png';
+ import P1_Photo3 from '../assets/projects/AppFinanzas/BusquedaAvanzada.png';
+ import P1_Photo4 from '../assets/projects/AppFinanzas/Transacciones.png';
+ import P1_Photo5 from '../assets/projects/AppFinanzas/Filtros.png';
+
+ import P2_Photo1 from '../assets/projects/Pokedex/Portada.jpg';
+ import P2_Photo2 from '../assets/projects/Pokedex/Profile.jpg';
+ import P2_Photo3 from '../assets/projects/Pokedex/Login.jpg';
+ import P2_Photo4 from '../assets/projects/Pokedex/Detail.jpg';
+ import P2_Photo5 from '../assets/projects/Pokedex/Favorites.jpg';
+ import P2_Photo6 from '../assets/projects/Pokedex/LoggedDetail.jpg';
+
+ import photoDefault from '../assets/projects/portada/random3.png';
  
 export const dataAbout:{
   title: string,
@@ -23,7 +30,7 @@ export const dataHome:{
 } = {
   title: 'Acerca de mi',
   description:[
-    'Ingeniero en control, desarrollador Frontend y estudiante de desarrollo web, con más de 7 años de experiencia laborando en el campo de la programación y automatización industrial, habilidades en el manejor de frameworks y librerias como react, react native, angular, manejo en control con programacion en PLC, variadores de velocidad, driver de servomotores, comunicaciones idustriales, interfaces HMI y SCADA. Conocimientos en diseño de interfaces y experiencia de usuario, manejo de herramientas de diseño como ilustrator y figma. Manejo de versiones y documentación con git y github.',
+    'Ingeniero en control, desarrollador Frontend y estudiante de desarrollo web, con más de 7 años de experiencia laborando en el campo de la programación y automatización industrial, habilidades en el manejor de librerias como react, react native, frameworks de angular, manejo en control con programacion en PLC, variadores de velocidad, driver de servomotores, comunicaciones idustriales, interfaces HMI y SCADA. Conocimientos en diseño de interfaces y experiencia de usuario, manejo de herramientas de diseño como ilustrator y figma. Manejo de versiones y documentación con git y github.',
     'Una persona sociable, emprendedora, autodidacta, con capacidad para trabajar en equipo, gusto por nuevas herramientas de programación, con hobbys en el futbol, en viajar y conocer nuevas culturas.'
   ]
 }
@@ -37,6 +44,7 @@ export interface project {
   summary: string;
   desciption: string[];
   skills: string[];
+  link?:string[];
 }
 
 export const projectsHome: {
@@ -45,18 +53,43 @@ export const projectsHome: {
   projects:[
     {
       id: 1,
-      title:'titulo 1',
-      images:[photo1, photo2, photo3, photo4, photo5, photo6],
-      age: '2020',
-      goal: 'lograr',
-      summary: 'lorem isu',
-      desciption: ['lorem isu','lorem asu'],
-      skills: ['API REST', 'Javascript'],
+      title:'Aplicación de finanzas con ReactJS',
+      images: [
+        P1_Photo1, 
+        P1_Photo2, 
+        P1_Photo3, 
+        P1_Photo4, 
+        P1_Photo5
+      ],
+      age: '2021',
+      goal: 'Conocer la librería React JS, para la construcción de un aplicación que nos permita llevar un control ordenado cronológicamente de nuestras finanzas básicas.',
+      summary: 'En este proyecto manejamos la librería react, para realizar un aplicación de control y seguimiento de la finanzas personales, mediante el registro de transacciones.',
+      desciption: [
+        'Para desarrollar esta aplicación se utilizaron varios hooks de react, como useState, useContext, useEfect, entre otros. Para los estilos se utilizó css puro. En cuanto al almacenamiento de la información que se mantiene, se utiliza el localstorage del navegador que usemos para abrir la app, por tanto para cada celular o pc podremos guardar y llevar registro de diferentes ingresos y egresos.',
+        'En cuanto a  la aplicación, esta nos permite agregar transacciones tanto de ingresos como de egresos, agregando una fecha y el concepto de la transacción para futuras búsquedas por palabra. Cuando hayamos registrado varias transacciones, se pueden marcar como ejecutadas o se pueden dejar pendientes. Al momento de buscar y filtrar tenemos una búsqueda avanzada que le permite a la app visualizar en el cuadro de transacciones la búsqueda y calcular valores filtrados con el resultado parcial total de ingresos y egresos más un balance sobre el filtro aplicado. En esta misma zona se muestra el valor total de todas las transacciones para aplicar comparaciones o analizar ciertos datos.'      ],
+      skills: [
+        'ReactJS',
+        'Javascript',
+        'LocalStorage',
+        'CSS',
+      ],
+      link: [
+        'https://github.com/Diegogar10/app-finazas-with-react',
+        'https://diegogar10.github.io/app-finazas-with-react/'
+      ],
     },
     { 
       id: 2,
       title:'titulo 2',
-      images:[photo2],
+      images:[
+        P2_Photo1, 
+        P2_Photo2, 
+        P2_Photo3, 
+        P2_Photo4, 
+        P2_Photo5,
+        P2_Photo6,
+
+      ],
       age: '2020',
       goal: 'alcanzar',
       summary: 'lorem isu',
@@ -66,7 +99,7 @@ export const projectsHome: {
     { 
       id: 3,
       title:'titulo 3',
-      images:[photo3],
+      images:[photoDefault],
       age: '2010',
       goal: 'permitir',
       summary: 'lorem isu',
@@ -76,7 +109,7 @@ export const projectsHome: {
     { 
       id: 4,
       title:'titulo 4',
-      images:[photo4],
+      images:[photoDefault],
       age: '2023',
       goal: 'Controlar',
       summary: 'lorem isu',
@@ -86,7 +119,7 @@ export const projectsHome: {
     { 
       id: 5,
       title:'titulo 5',
-      images:[photo5],
+      images:[photoDefault],
       age: '2018',
       goal: 'aprender',
       summary: 'lorem isu',
@@ -96,7 +129,7 @@ export const projectsHome: {
     { 
       id: 6,
       title:'titulo 6',
-      images:[photo6],
+      images:[photoDefault],
       age: '2022',
       goal: 'practicar',
       summary: 'lorem isu',
@@ -106,7 +139,7 @@ export const projectsHome: {
     {
       id: 7,
       title:'titulo 7',
-      images:[photo7],
+      images:[photoDefault],
       age: '2019',
       goal: 'enseñar',
       summary: 'lorem isu',
