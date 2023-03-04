@@ -17,10 +17,10 @@ export const dataAbout:{
   title: string,
   biografy: string[]
 } = {
-  title: 'Mi hostoria',
+  title: 'Mi historia',
   biografy: [
-    'Soy originario de Fusagasugá y criado en el bello municipio de Soacha Cundinamarca. Fue allí donde conocí la tecnología gracias a la electrónica i una materia impartida en quito grado de primaria, yo por ese entonces con tan solo 11 años en el año 2003 ya empezaba a sentir un gusto que a lo largo del tiempo se convertiría en mi más grande pasión; el desarrollo de software y la ingeniería de control. Cursando esta materia año a año fui encontrando destrezas y gustos particulares. Por ese tiempo recuerdo que me emociono mucho entender como operaban nuestros electrodomésticos, como creábamos pequeños circuitos con chips grandes y viejos que nos enseñaban la lógica de como prender algunos bombillos leds o tal vez contabilizar personas en uno que otro proyecto. Sali como bachiller en el 2009 con la firme idea de estudiar electrónica, las posibilidades me llevaron a estudiar en una universidad pública y quien es hoy mi alma mater, la grandiosa universidad Francisco José de Caldas de Bogotá. En esta universidad seguí con mi aprendizaje, aunque el paso por allí no fue nada fácil, logré graduarme de inicio como tecnólogo en electrónica y en el 2017 como ingeniero en control. Fue la universidad quien afianzo mi gusto por la programación, en especial la programación evocada al control de proceso, automatismos, neumática e hidráulica y a la automatización industrial. Sin aun haber finalizado mi carrera como ingeniero y ya habiendo trabajado anteriormente, apareció mi primera gran oportunidad en un empresa nacional que me permitió crecer mucho, acumular vasta experiencia en el sector de la automatización, manejando instrumentos de marcas importantes como SIEMENS, LENZE, MITSUBISHI, ROCKWELL. En esta empresa me he venido desempeñando y creciendo desde entonces, iniciando como programador y desarrollador para el control de la maquinaria que se fabrica, hasta ejecutando y llevando proyectos acabo.',
-    'Hace unos tres años, motivado por saber cómo funcionaba la industria 4.0 y como se integraba a nivel global la automatización con el desarrollo web, decidí estudiar a profundidad desarrollo web frontend y backend. Quizás por pandemia y la falta de tiempo de ir a una universidad, decidí probar por el autoaprendizaje, entonces di con buenos cursos y tutoriales virtuales, pero fue conociendo y utilizando los beneficios de la plataforma de platzi donde me volví a enamorar, esta vez de todo el ecosistema que comprende al desarrollo web e internet, sin duda un gran conocimiento y visto por mi como una carrera de gran complemento de la ingeniería electrónica. Hoy me encuentro en otro momento y mi objetivo está puesto en el trabajo remoto, en trabajar para las startup que conectan el mundo, crean futuro, desarrollan valor y utilizan la tecnología como medio. La gran eficiencia que significa el empleo remoto, es ahí donde quiero incursionar, una comunidad llena de colaboración, de libertad y una cultura maravillosa donde aplicar lo aprendido y lo que sigo aprendiendo.'          
+    'Soy originario de Fusagasugá y criado en el bello municipio de Soacha Cundinamarca. Fue allí donde conocí la tecnología gracias a la electrónica una materia impartida en quito grado de primaria, yo por ese entonces con tan solo 11 años en el año 2003 ya empezaba a sentir un gusto que a lo largo del tiempo se convertiría en mi más grande pasión; el desarrollo de software y la ingeniería de control. Cursando esta materia año a año fui encontrando destrezas y gustos particulares. Por ese tiempo recuerdo que me emocionó mucho entender cómo operan nuestros electrodomésticos, como creamos pequeños circuitos con chips grandes y viejos que nos enseñaban la lógica de como prender algunos bombillos leds o tal vez contabilizar personas en uno que otro proyecto. Salí como bachiller en el 2009 con la firme idea de estudiar electrónica, las posibilidades me llevaron a estudiar en una universidad pública y quien es hoy mi alma mater, la grandiosa universidad Francisco José de Caldas de Bogotá. En esta universidad seguí con mi aprendizaje, aunque el paso por allí no fue nada fácil, logré graduarme de inicio como tecnólogo en electrónica y en el 2017 como ingeniero en control. Fue la universidad quien afianzó mi gusto por la programación, en especial la programación evocada al control de proceso, automatismos, neumática e hidráulica y a la automatización industrial. Sin aún haber finalizado mi carrera como ingeniero y ya habiendo trabajado anteriormente, apareció mi primera gran oportunidad en un empresa nacional que me permitió crecer mucho, acumular vasta experiencia en el sector de la automatización, manejando instrumentos de marcas importantes como SIEMENS, LENZE, MITSUBISHI, ROCKWELL. En esta empresa me he venido desempeñando y creciendo desde entonces, iniciando como programador y desarrollador para el control de la maquinaria que se fabrica, hasta ejecutando y llevando proyectos a cabo.',
+    'Hace unos tres años, motivado por saber cómo funcionaba la industria 4.0, cómo se integraba a nivel global la automatización con el desarrollo web, decidí estudiar a profundidad desarrollo web frontend y backend. Quizás por pandemia y la falta de tiempo de ir a una universidad, decidí probar por el autoaprendizaje, entonces di con buenos cursos y tutoriales virtuales, pero fue conociendo y utilizando los beneficios de la plataforma de platzi donde me volví a enamorar, esta vez de todo el ecosistema que comprende al desarrollo web e internet, sin duda un gran conocimiento y visto por mi como una carrera de gran complemento de la ingeniería electrónica. Hoy me encuentro en otro momento y mi objetivo está puesto en el trabajo remoto, en trabajar para las startup que conectan el mundo, crean futuro, desarrollan valor y utilizan la tecnología como medio. La gran eficiencia que significa el empleo remoto, es ahí donde quiero incursionar, una comunidad llena de colaboración, de libertad y una cultura maravillosa donde aplicar lo aprendido y lo que sigo aprendiendo.'          
   ]
 }
 
@@ -30,8 +30,8 @@ export const dataHome:{
 } = {
   title: 'Acerca de mi',
   description:[
-    'Ingeniero en control, desarrollador Frontend y estudiante de desarrollo web, con más de 7 años de experiencia laborando en el campo de la programación y automatización industrial, habilidades en el manejor de librerias como react, react native, frameworks de angular, manejo en control con programacion en PLC, variadores de velocidad, driver de servomotores, comunicaciones idustriales, interfaces HMI y SCADA. Conocimientos en diseño de interfaces y experiencia de usuario, manejo de herramientas de diseño como ilustrator y figma. Manejo de versiones y documentación con git y github.',
-    'Una persona sociable, emprendedora, autodidacta, con capacidad para trabajar en equipo, gusto por nuevas herramientas de programación, con hobbys en el futbol, en viajar y conocer nuevas culturas.'
+    'Ingeniero en control, desarrollador Frontend y estudiante de desarrollo web, con más de 7 años de experiencia laborando en el campo de la programación y automatización industrial, habilidades en el manejo de librerías como react, react native, frameworks de angular, manejo en control con programación en PLC, variadores de velocidad, driver de servomotores, comunicaciones industriales, interfaces HMI y SCADA. Conocimientos en diseño de interfaces y experiencia de usuario, manejo de herramientas de diseño como ilustrator y figma. Manejo de versiones y documentación con git y github.',
+    'Una persona sociable, emprendedora, autodidacta, con capacidad para trabajar en equipo, gusto por nuevas herramientas de programación, con hobbys en el fútbol, en viajar y conocer nuevas culturas.'
   ]
 }
 
@@ -80,7 +80,7 @@ export const projectsHome: {
     },
     { 
       id: 2,
-      title:'titulo 2',
+      title:'Aplicación de biblioteca de pokemons con react-native',
       images:[
         P2_Photo1, 
         P2_Photo2, 
@@ -90,11 +90,19 @@ export const projectsHome: {
         P2_Photo6,
 
       ],
-      age: '2020',
-      goal: 'alcanzar',
-      summary: 'lorem isu',
-      desciption: ['lorem isu'],
-      skills: ['API REST', 'Javascript'],
+      age: '2022',
+      goal: 'Poner en práctica el conocimiento adquirido de react-native desarrollando una app nativa de pokemons para ios y android.',
+      summary: 'En este proyecto trabajamos con react-native para consumir una API de pokemons y crear una bella aplicación tanto para android como para ios. Donde aplicamos lo aprendido.',
+      desciption: [
+        'Esta aplicación que sirve para andorid y ios fue desarrollada mediante react-native que permite programar en javascript y transpirar a código nativo para cada sistema operativo, se hizo uso de otras librerías, frameworks y plugins, como capitalize, formik, react-navigation.',
+        'Por otro lado la aplicación se diseñó con una página principal donde cargamos los pokemons desde una consulta a una API pública, luego creamos un set de ventanas. Una de ellas Favoritos donde visualizamos los pokemons que más nos gustan si tenemos una sesión abierta. Otra ventana fue la de login, donde ingresamos y podemos ver información básica de nuestro perfil.'
+      ],
+      skills: [
+        'API REST',
+        'Javascript',
+        'React-native',
+        'LazyLoading',
+      ],
     },
     { 
       id: 3,
