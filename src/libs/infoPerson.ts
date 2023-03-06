@@ -11,6 +11,18 @@
  import P2_Photo5 from '../assets/projects/Pokedex/Favorites.jpg';
  import P2_Photo6 from '../assets/projects/Pokedex/LoggedDetail.jpg';
 
+ import P3_Photo1 from '../assets/projects/AnimacionesCss/Portada.png';
+ import P3_Photo2 from '../assets/projects/AnimacionesCss/Score.png';
+
+ import P4_Photo1 from '../assets/projects/Termoformadora/Home.png';
+ import P4_Photo2 from '../assets/projects/Termoformadora/Principal.png';
+ import P4_Photo3 from '../assets/projects/Termoformadora/ListPrograms.png';
+ import P4_Photo4 from '../assets/projects/Termoformadora/SetSection.png';
+ import P4_Photo5 from '../assets/projects/Termoformadora/Settings.png';
+ import P4_Photo6 from '../assets/projects/Termoformadora/SettingMan.png';
+ import P4_Photo7 from '../assets/projects/Termoformadora/Termo1.jpg';
+ import P4_Photo8 from '../assets/projects/Termoformadora/Termo2.jpg';
+
  import photoDefault from '../assets/projects/portada/random3.png';
  
 export const dataAbout:{
@@ -45,6 +57,7 @@ export interface project {
   desciption: string[];
   skills: string[];
   link?:string[];
+  video?:string
 }
 
 export const projectsHome: {
@@ -106,23 +119,64 @@ export const projectsHome: {
     },
     { 
       id: 3,
-      title:'titulo 3',
-      images:[photoDefault],
-      age: '2010',
-      goal: 'permitir',
-      summary: 'lorem isu',
-      desciption: ['lorem isu'],
-      skills: ['API REST', 'Javascript'],
+      title:'Juego pegale al conejo con Animcaiones CSS',
+      images:[
+        P3_Photo1,
+        P3_Photo2
+      ],
+      age: '2019',
+      goal: 'Comprender todos los principios de las hojas de estilos con CSS.',
+      summary: 'En este proyecto construimos animado y divertido juego con ayuda de animaciones en css, manejando selectores, transiciones, efectos, y animaciones con Keyframes.',
+      desciption: [
+        'Por medio maquetación en html, de Keyframes y dibujando en css gracias a las propiedades de los elementos, se logró construir toda una interfaz animada e interactiva.',
+        'El juego consiste en dar click encima de los conejos que aparecen y desaparecen, ocultándose sobre las montañas cuando logramos dar clik el score va registrando el puntaje que se va acumulando en el juego.'
+      ],
+      skills: [
+        'CSS', 
+        'HTML', 
+        'Animaciones', 
+        'Game'
+      ],
+      link: [
+        'https://github.com/Diegogar10/animacionesCSS',
+        'https://diegogar10.github.io/animacionesCSS/'
+      ],
     },
     { 
       id: 4,
-      title:'titulo 4',
-      images:[photoDefault],
-      age: '2023',
-      goal: 'Controlar',
-      summary: 'lorem isu',
-      desciption: ['lorem isu'],
-      skills: ['API REST', 'Javascript'],
+      title:'Automatización Termoformadora Titanium 270',
+      images:[
+        P4_Photo1,
+        P4_Photo2,
+        P4_Photo3,
+        P4_Photo4,
+        P4_Photo5,
+        P4_Photo6,
+        P4_Photo7,
+        P4_Photo8,
+      ],
+      age: '2018',
+      goal: 'Controlar la maquina termoformadora, para que haga ciclo completo de empaque al vacio',
+      summary: 'En este proyecto por medio de programación en PLC, diseño de interfaz HMI en pantalla, control de valvulas y servomotor, lográ controlar la maquina termofomadora.',
+      desciption: [
+        'El proyecto termofomradora es toda una compleja implementacíon de automatizacion industrial que comprende varias disciplinas, allí se realizo todo un control de diferentes sistemas como movimiento de cadena a traves de un servomotor, manejo de valvulas neumaticas, de presion positiva y negativa(Vacio), control de macado con impresores de inyeccion y control de temperaturas en las plancha de formado y sellado. Por otra parte se implemento el monitoreo, control y acceso remoto a la maquina mediante la configuración de una red con tunel vpn.',
+        'La termoformadora es una maquina elaborada nacionalmente con referencia a grandes idustrias que la producen como la industria alemana, americana, china, italania entre otras. Esta maquina permite empacar al vacio cualquier producto alimenticio como jamosnes, chorizos, quesos, carnes maduradas entre otros.',
+        'El principio consta de varias secciones:',
+        '1. Seccion de formado, donde se forma el bolsillo en fill transparente, con el formato adecuado para el producto a empacar',
+        '2. Seccion de empaque donde se empaca las cantidades correctas en los bolsillos formados',
+        '3. Seccion de sellado donde ocurren dos eventos, sacar el vacio para conservar el producto y una vez alcanzada la presion minima sellar con calor el paquete con una tapa impresa o tranpsarente.',
+        '4. Seccion de corte y marcado, en el avance de cada paso, una vez se ha sellado el paquete pasa a ser cortado segun el formato.'
+      ],
+      skills: [
+        'PLC', 
+        'HMI',
+        'SERVO-DRIVE',
+        'LADDER',
+        'AUTOMATIZACION',
+        'VPN',
+        'REMOTO'
+      ],
+      video:'https://youtu.be/_WnEdSaw2zk',
     },
     { 
       id: 5,
@@ -144,15 +198,5 @@ export const projectsHome: {
       desciption: ['lorem isu'],
       skills: ['API REST', 'Javascript'],
     },
-    {
-      id: 7,
-      title:'titulo 7',
-      images:[photoDefault],
-      age: '2019',
-      goal: 'enseñar',
-      summary: 'lorem isu',
-      desciption: ['lorem isu'],
-      skills: ['API REST', 'Javascript'],
-    }
   ]
 }
