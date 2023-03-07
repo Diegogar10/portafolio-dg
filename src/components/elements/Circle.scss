@@ -11,3 +11,12 @@
   border-radius: 50%;
   z-index: 1;
 }
+
+@media (max-width: 426px) {
+  .circle__background {
+    z-index: 0;
+  }
+  .circle__border {
+    z-index: 0;
+  }
+}

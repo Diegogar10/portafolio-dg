@@ -36,19 +36,20 @@ const GaleryCarrusel = ({
   return (
     <div className='galery__container'>
       <h4>Galeria</h4>
-      <figure className='galery--photos'>
+      <figure className={'galery--photos'}>
         {images.map((image, key)=><img 
           style={{...styles}}
           key={key} 
           src={image} 
           alt='default'
+          
           />
         )}
       </figure>
       { (images.length > 1) &&
         <div className='buttons--control'>
-          {move>=100 && <button onClick={handleRightImage}><ArrowBackIosNewIcon sx={{...stylesArrow}}/></button>||<p></p>}
-          {(move<(( images.length - 1 ) * 100 )) && <button onClick={handleLeftImage}><ArrowForwardIosIcon sx={{...stylesArrow}}/></button>}
+          {move>=100 && <button className='button__arrow' onClick={handleRightImage}><ArrowBackIosNewIcon sx={{...stylesArrow}}/></button>||<p></p>}
+          {(move<(( images.length - 1 ) * 100 )) && <button className='button__arrow' onClick={handleLeftImage}><ArrowForwardIosIcon sx={{...stylesArrow}}/></button>||<p></p>}
         </div>
       }
      </div>
