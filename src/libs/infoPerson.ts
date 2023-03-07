@@ -77,7 +77,7 @@ export const projectsHome: {
     },
     { 
       id: 2,
-      title:'Aplicación de biblioteca de pokemons con react-native',
+      title:'Aplicación de biblioteca de pokemons con React-Native',
       images:[
         P2_Photo1, 
         P2_Photo2, 
