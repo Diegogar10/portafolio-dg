@@ -23,7 +23,21 @@
  import P4_Photo7 from '../assets/projects/Termoformadora/Termo1.jpg';
  import P4_Photo8 from '../assets/projects/Termoformadora/Termo2.jpg';
 
- import photoDefault from '../assets/projects/portada/random3.png';
+ import P5_Photo1 from '../assets/projects/Mezclador/Home.png';
+ import P5_Photo2 from '../assets/projects/Mezclador/Principal.png';
+ import P5_Photo3 from '../assets/projects/Mezclador/Programs.png';
+ import P5_Photo4 from '../assets/projects/Mezclador/Settings.png';
+ import P5_Photo5 from '../assets/projects/Mezclador/Setup.png';
+ import P5_Photo6 from '../assets/projects/Mezclador/Mezclador1.jpeg';
+ import P5_Photo7 from '../assets/projects/Mezclador/Mezclador2.jpeg';
+ import P5_Photo8 from '../assets/projects/Mezclador/Control.jpg';
+
+ import P6_Photo1 from '../assets/projects/Ilustrator/Portada.png';
+ import P6_Photo2 from '../assets/projects/Ilustrator/Capas.png';
+ import P6_Photo3 from '../assets/projects/Ilustrator/Componentes.png';
+
+
+import photoDefault from '../assets/projects/portada/random3.png';
  
 export const dataAbout:{
   title: string,
@@ -157,15 +171,15 @@ export const projectsHome: {
       ],
       age: '2018',
       goal: 'Controlar la maquina termoformadora, para que haga ciclo completo de empaque al vacio',
-      summary: 'En este proyecto por medio de programación en PLC, diseño de interfaz HMI en pantalla, control de valvulas y servomotor, lográ controlar la maquina termofomadora.',
+      summary: 'En este proyecto por medio de programación en PLC, diseño de interfaz HMI en pantalla, control de válvulas y servomotor, logra controlar la máquina termoformadora.',
       desciption: [
-        'El proyecto termofomradora es toda una compleja implementacíon de automatizacion industrial que comprende varias disciplinas, allí se realizo todo un control de diferentes sistemas como movimiento de cadena a traves de un servomotor, manejo de valvulas neumaticas, de presion positiva y negativa(Vacio), control de macado con impresores de inyeccion y control de temperaturas en las plancha de formado y sellado. Por otra parte se implemento el monitoreo, control y acceso remoto a la maquina mediante la configuración de una red con tunel vpn.',
-        'La termoformadora es una maquina elaborada nacionalmente con referencia a grandes idustrias que la producen como la industria alemana, americana, china, italania entre otras. Esta maquina permite empacar al vacio cualquier producto alimenticio como jamosnes, chorizos, quesos, carnes maduradas entre otros.',
+        'El proyecto termoformadora es toda una compleja implementación de automatización industrial que comprende varias disciplinas, allí se realizó todo un control de diferentes sistemas como movimiento de cadena a través de un servomotor, manejo de válvulas neumáticas, de presión positiva y negativa(Vacío), control de macado con impresores de inyección y control de temperaturas en las plancha de formado y sellado. Por otra parte se implementó el monitoreo, control y acceso remoto a la máquina mediante la configuración de una red con túnel vpn.',
+        'La termoformadora es una máquina elaborada nacionalmente con referencia a grandes industrias que la producen como la industria alemana, americana, china, italiana entre otras. Esta máquina permite empacar al vacio cualquier producto alimenticio como jamones, chorizos, quesos, carnes maduradas entre otros.',
         'El principio consta de varias secciones:',
-        '1. Seccion de formado, donde se forma el bolsillo en fill transparente, con el formato adecuado para el producto a empacar',
-        '2. Seccion de empaque donde se empaca las cantidades correctas en los bolsillos formados',
-        '3. Seccion de sellado donde ocurren dos eventos, sacar el vacio para conservar el producto y una vez alcanzada la presion minima sellar con calor el paquete con una tapa impresa o tranpsarente.',
-        '4. Seccion de corte y marcado, en el avance de cada paso, una vez se ha sellado el paquete pasa a ser cortado segun el formato.'
+        '1. Sección de formado, donde se forma el bolsillo en film transparente, con el formato adecuado para el producto a empacar',
+        '2. Sección de empaque donde se empaca las cantidades correctas en los bolsillos formados',
+        '3. Sección de sellado donde ocurren dos eventos, sacar el vacio para conservar el producto y una vez alcanzada la presión mínima sellar con calor el paquete con una tapa impresa o transparente.',
+        '4. Sección de corte y marcado, en el avance de cada paso, una vez se ha sellado el paquete pasa a ser cortado según el formato.'
       ],
       skills: [
         'PLC', 
@@ -180,23 +194,60 @@ export const projectsHome: {
     },
     { 
       id: 5,
-      title:'titulo 5',
-      images:[photoDefault],
-      age: '2018',
-      goal: 'aprender',
-      summary: 'lorem isu',
-      desciption: ['lorem isu'],
-      skills: ['API REST', 'Javascript'],
+      title:'Automatización Mezclador con vácio',
+      images:[
+        P5_Photo1,
+        P5_Photo2,
+        P5_Photo3,
+        P5_Photo4,
+        P5_Photo5,
+        P5_Photo6,
+        P5_Photo7,
+        P5_Photo8,
+      ],
+      age: '2022',
+      goal: 'Programar en lenguaje ladder el control para mover dos motores que diren en diferente sentido. Generar una interfaz de usuario que comunique con el plc y se permita crear programas y manipular lo ciclos de mezclado para diferentes productos.',
+      summary: 'El actual proyecto se desarrolló mediante PLC, HMI, Variodor de velocidad, que permiten a la máquina controlar el movimiento, la velocidad y el tiempo de sus aspas en diferentes ciclos para lograr mezclas homogéneas de diferentes productos.',
+      desciption: [
+        'El eje fundamental de este proyecto son los motores que van engranados a las aspas quienes son las responsables de mezclar el producto, para controlar el arranque suave, la dirección de giro y la velocidad de los motores se utilizó un variador de velocidad. El control de programas y del variador se realizó en lenguaje ladder en un plc que mediante señales digitales y análogas controla la operación del variador.',
+        'El proyecto consta de un pantalla de 7" que le permite al usuario programar recetas para los diferentes productos, donde tiene 12 pasos por receta para poder disponer de la configuración necesaria, con tiempos y velocidades que mas se consideren adecuadas para cada momento de la mezcla del producto.',
+        'El mezclador es un equipo de fabricación nacional, que le permite a la industria de alimentos mezclar todo tipo de productos, como carnes de hamburguesa, pastas de jamones, chorizos, tocinetas, entre muchos otros. Este equipo cuenta aparte con vacío para cuando se quiere tener mezclas más homogéneas o agregar salmueras de absorción a la fibras de proteínas de algunos productos.'
+      ],
+      skills: [
+        'PLC',
+        'HMI',
+        'Ladder',
+        'UI',
+        'Variadores de velociada',
+
+      ],
+      video:'https://youtube.com/shorts/QU5kA9FVGFI?feature=share',
     },
     { 
       id: 6,
-      title:'titulo 6',
-      images:[photoDefault],
-      age: '2022',
-      goal: 'practicar',
-      summary: 'lorem isu',
-      desciption: ['lorem isu'],
-      skills: ['API REST', 'Javascript'],
+      title:'Diseño de interfaz de equipo tajadora en ilustrator',
+      images:[
+        P6_Photo1,
+        P6_Photo2,
+        P6_Photo3,
+      ],
+      age: '2020',
+      goal: 'Realizar todo un diseño de la interfaz de usuario para una maquina tajadora en el programa illustrator',
+      summary: 'En este proyecto se realizó toda la elaboración de iconos, elementos y componentes, para construir una interfaz intuitiva que permita la operación de una tajadora básica.',
+      desciption: [
+        'Mediante un diseño sencillo y minimalista se desarrolló todo un conjunto de iconos con una paleta de colores que resaltan la interacción del usuario con las funciones del equipo y sus estados.',
+        'Se aplicó un sistema de diseño atomico, que comienza por botones, iconos, textos, y progresivamente se va conformando la integración de paneles, menús y otro contenedores que permiten construir cada ventana',
+        'A través de capas que son utilizadas podemos visualizar algunos efectos de pantalla, para luego exportar dichos elementos a imagenes vectorizadas (SVGs) para poder implementar en pantallas bien sea que soporte imágenes o pantallas web',
+        'Se penso en la manera más sencilla de operar con cambios de color de iconos, elevacion de paneles con sombras e integracion de funciones en los mismos, pra lograr un funcionamiento intutivo para el usurio operador de la maquina.'
+      ],
+      skills: [
+        'Diseño atomico', 
+        'SVG',
+        'Ilustrato',
+        'UI',
+        'efectos',
+        'Diseño'
+      ],
     },
   ]
 }
