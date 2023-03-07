@@ -32,7 +32,7 @@ const PortfolioDetail = () => {
     <div className='projectDetail__container'>
       <h3>{title}</h3>
       <div className='projectDetail__goal'>
-        <h4>Objectivo</h4>
+        <h4>Objetivo</h4>
         <p>{goal}</p>
       </div>
       <div className='projectDetail__description'>
