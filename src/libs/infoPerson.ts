@@ -91,7 +91,7 @@ export const projectsHome: {
       goal: 'Poner en práctica el conocimiento adquirido de react-native desarrollando una app nativa de pokemons para ios y android.',
       summary: 'En este proyecto trabajamos con react-native para consumir una API de pokemons y crear una bella aplicación tanto para android como para ios. Donde aplicamos lo aprendido.',
       desciption: [
-        'Esta aplicación que sirve para andorid y ios fue desarrollada mediante react-native que permite programar en javascript y transpirar a código nativo para cada sistema operativo, se hizo uso de otras librerías, frameworks y plugins, como capitalize, formik, react-navigation.',
+        'Esta aplicación fue desarollada mediante react-native que permite programar en javascript y transpirar a código nativo para cada sistema operativo para dispositivos moviles (ios y android), se hizo uso de librerías, frameworks y plugins como capitalize, formik, react-navigation.',
         'Por otro lado la aplicación se diseñó con una página principal donde cargamos los pokemons desde una consulta a una API pública, luego creamos un set de ventanas. Una de ellas Favoritos donde visualizamos los pokemons que más nos gustan si tenemos una sesión abierta. Otra ventana fue la de login, donde ingresamos y podemos ver información básica de nuestro perfil.'
       ],
       skills: [
