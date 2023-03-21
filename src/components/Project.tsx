@@ -1,3 +1,4 @@
+import { Button } from '../components/elements/Button'
 import React, { useState, useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 import { project } from '../libs/infoPerson';
@@ -36,6 +37,7 @@ const Project = (
         <h2>{title}</h2>
         <h4>{age}</h4>
         <p>{summary}</p>
+        <button onClick={handleClick}>Ver más...</button>
       </section>
     </article>
   )

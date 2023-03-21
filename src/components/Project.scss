@@ -71,7 +71,17 @@
       font-size: 14px;
       font-weight: 400;
       text-align: justify;
-
+    }
+    button {
+      grid-row-start: 1;
+      width: 100px;
+      height: 40px;
+      border: none;
+      border-radius: 10px;
+      background: $blueDark;
+      color: $blueLight;
+      font-size: 1.0rem;
+      font-family: $mainFont;
     }
     
     transition: all ease 0.5s;
