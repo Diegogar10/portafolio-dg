@@ -17,6 +17,7 @@
     display: block;
     margin: 15px;
     padding: 3px;
+    opacity: 0;
     font-size: 1.5rem;
     font-weight: 400;
     white-space: nowrap;
@@ -30,20 +31,21 @@
     border-right: 4px solid;
     width: 12ch;
     overflow: hidden;
-    animation: typing 2s steps(12),
-      blink 0.5s step-end alternate,
-      blinkFinal 0.2s 2s infinite; 
-
+    animation: 
+      visibleText  4s 0.3s infinite,
+      typing 1.2s 0.25s steps(12),
+      blink 0.35s step-end alternate,
+      blinkFinal 0.2s 0.25s infinite; 
+    
   }
-   h4{
+  h4{
     border-right: 4px solid;
     width: 17ch;
     overflow: hidden;
-    opacity: 0;
     animation:
-      visbleText  4s 2s infinite,
-      typing 2s 2s steps(17),
-      blink 0.5s 2s step-end alternate,
+      visibleText  4s 1.5s infinite,
+      typing 1.4s 1.45s steps(17),
+      blink 0.35s 1.45s step-end alternate,
       blinkFinal 0.2s 4s infinite; 
    }
 
@@ -59,7 +61,7 @@
       border-bottom-color: transparent;
       border-right-color: transparent;
       border-left-color: $blueDark;
-      animation:load1 3.5s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
+      animation:load1 2s 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
     }
 
   }
@@ -81,7 +83,7 @@
   }
 }
 
-@keyframes visbleText {
+@keyframes visibleText {
   from{
     opacity: 1;
   }

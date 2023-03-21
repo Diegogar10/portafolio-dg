@@ -13,7 +13,7 @@ const Home = () => {
   useEffect(()=>{
     setTimeout(()=>{
       loadingComplete();
-    },7000);
+    },4000);
   },[]);
   return (
     <>
