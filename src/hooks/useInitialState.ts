@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 interface globalState {
+  loading:boolean;
   biography: boolean;
   portfolio: {
     active: boolean;
@@ -9,6 +10,7 @@ interface globalState {
 }
 
 const initialState: globalState = {
+  loading: true,
   biography: false,
   portfolio: {
     active: false,
@@ -51,11 +53,19 @@ export const useInitialState = () => {
     })
   }
 
+  const loadingComplete = () =>{
+    setState({
+      ...state,
+      loading:false,
+    })
+  }
+
   return {
     state,
     activeBio,
     inactiveBio,
     activePort,
-    inactivePort
+    inactivePort,
+    loadingComplete,
   }
 }

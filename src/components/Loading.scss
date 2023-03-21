@@ -1,0 +1,112 @@
+@import '../styles/globals';
+
+.loading__conatiner {
+  background: $blueDark;
+  color: $blueLight;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 60vh;
+
+  h2, h4 {
+    display: block;
+    margin: 15px;
+    padding: 3px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  
+  h2 {
+    margin-top: -45px;
+    color: $blueDarkLight;
+    font-size: 1.9rem;
+    font-weight: bold;
+    border-right: 4px solid;
+    width: 12ch;
+    overflow: hidden;
+    animation: typing 2s steps(12),
+      blink 0.5s step-end alternate,
+      blinkFinal 0.2s 2s infinite; 
+
+  }
+   h4{
+    border-right: 4px solid;
+    width: 17ch;
+    overflow: hidden;
+    opacity: 0;
+    animation:
+      visbleText  4s 2s infinite,
+      typing 2s 2s steps(17),
+      blink 0.5s 2s step-end alternate,
+      blinkFinal 0.2s 4s infinite; 
+   }
+
+   .loadSpinner__top {
+      position: absolute;
+      margin-top: -150px;
+      width: 300px;
+      height: 300px;
+      transform:rotateZ(45deg);
+      border-radius: 50%;
+      border: 10px solid;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      border-left-color: $blueDark;
+      animation:load1 3.5s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
+    }
+
+  }
+@keyframes load1 {
+  25%{
+    border-left-color: $blueDark;
+  }
+  30%{
+    border-left-color: $blueLight;
+  }
+  65%{
+    border-left-color: $blueLight;
+  }
+  70% {
+    border-left-color: $blueDark;
+  }
+  100% {
+    transform: rotateZ(405deg);
+  }
+}
+
+@keyframes visbleText {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  from{
+    width: 0;
+  }  
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blinkFinal {
+  from {
+    border-color: transparent;
+  } 
+  to {
+    border-color: transparent;
+  } 
+}
