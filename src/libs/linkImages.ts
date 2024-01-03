@@ -36,6 +36,13 @@ import P6_Photo1 from '../assets/projects/Ilustrator/Portada.png';
 import P6_Photo2 from '../assets/projects/Ilustrator/Capas.png';
 import P6_Photo3 from '../assets/projects/Ilustrator/Componentes.png';
 
+import P7_Photo1 from '../assets/projects/Angular/foto1.png';
+
+import P8_Photo1 from '../assets/projects/Recipes/foto1.png';
+import P8_Photo2 from '../assets/projects/Recipes/foto2.png';
+import P8_Photo3 from '../assets/projects/Recipes/foto3.png';
+import P8_Photo4 from '../assets/projects/Recipes/foto4.png';
+
 export {
   P1_Photo1,
   P1_Photo2,
@@ -69,5 +76,10 @@ export {
   P6_Photo1,
   P6_Photo2,
   P6_Photo3,
+  P7_Photo1,
+  P8_Photo1,
+  P8_Photo2,
+  P8_Photo3,
+  P8_Photo4,
 };
 

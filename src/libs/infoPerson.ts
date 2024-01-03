@@ -4,7 +4,9 @@ import {
   P3_Photo1, P3_Photo2, 
   P4_Photo1, P4_Photo2, P4_Photo3, P4_Photo4, P4_Photo5, P4_Photo6, P4_Photo7, P4_Photo8,
   P5_Photo1, P5_Photo2, P5_Photo3, P5_Photo4, P5_Photo5, P5_Photo6, P5_Photo7, P5_Photo8, 
-  P6_Photo1, P6_Photo2, P6_Photo3
+  P6_Photo1, P6_Photo2, P6_Photo3,
+  P7_Photo1,
+  P8_Photo1, P8_Photo2, P8_Photo3, P8_Photo4
 } from  './linkImages';
 
 import photoDefault from '../assets/projects/portada/random3.png';
@@ -48,6 +50,64 @@ export const projectsHome: {
   projects: project[];
 } = {
   projects:[
+    {
+      id: 8,
+      title:'Aplicación web de recetas Favoritas con React',
+      images: [
+        P8_Photo1, 
+        P8_Photo2, 
+        P8_Photo3, 
+        P8_Photo4, 
+      ],
+      age: '2023',
+      goal: 'Crear una aplicación web completa en tan solo 3 días y medio mediante el uso de React. La aplicación permitirá consultar una API de recetas culinarias, brindando a los usuarios la capacidad de explorar, seleccionar y guardar sus recetas favoritas de manera intuitiva y eficiente.',
+      summary: 'Sumérgete en el mundo culinario con nuestra aplicación React de vanguardia. Construimos una experiencia web fluida que te permite explorar y seleccionar recetas por categoría. Además, disfruta de la personalización al crear un usuario exclusivo con permisos especiales para guardar tus favoritos. ¡Bienvenido a la revolución culinaria digital con React!',
+      desciption: [
+        'En el fascinante mundo del desarrollo web, hemos creado una aplicación excepcional utilizando React como nuestra principal herramienta. Nuestra aplicación es mucho más que solo líneas de código; es una experiencia interactiva que te sumerge en el universo de las recetas culinarias. Gracias a la magia de React, hemos construido componentes y utilizado hooks, routing, y context, entre otras poderosas herramientas, para dar vida a una plataforma web que te permite explorar recetas organizadas por categorías de una manera intuitiva y fluida.',
+        'Pero no nos detenemos ahí. Hemos llevado la experiencia del usuario un paso más allá al incorporar la posibilidad de seleccionar tus recetas favoritas y guardarlas en tu propia sesión personalizada de favoritos. ¿Cómo logramos esto? Implementamos un sistema de registro que te permite crear un usuario único con permisos especiales, proporcionándote un espacio exclusivo para gestionar y almacenar tus recetas preferidas. Este toque personalizado hace que la aplicación no solo sea funcional, sino también adaptada a tus preferencias culinarias individuales.',
+        'En resumen, nuestra aplicación no solo es una muestra de habilidades técnicas avanzadas, sino también un viaje interactivo que te invita a explorar el emocionante mundo de la cocina. Desde la organización por categorías hasta la posibilidad de personalizar tu experiencia mediante la creación de un usuario con permisos especiales, nuestra aplicación construida con React redefine la forma en que interactuamos con las recetas en línea.'
+      ],
+      skills: [
+        'API REST',
+        'ReactJS',
+        'CSS',
+        'Javscript',
+        'Routing',
+        'UI/UX',
+        'HTML',
+        'Responsive Design'
+      ],
+      link: [
+        'https://github.com/Diegogar10/app-test-rocketfy',
+        'https://apptestrocketfy.netlify.app/'
+      ],
+    },
+    {
+      id: 7,
+      title:'Tienda de productos con Angular',
+      images: [
+        P7_Photo1, 
+      ],
+      age: '2023',
+      goal: 'Conocer el framework Angular todas utilidades, para desarrollar toda una tienda online que permita compras de manera fácil.',
+      summary: 'Con el uso de Angular y mediante la creación de componentes, servicios, routing, http, forms entre otras herramientas construimos toda una aplicación web que permite ver los productos por categoría, seleccionar algunos productos y llevarlos al carrito de compras, registrarse como usuario, y muchas más funcionalidades.',
+      desciption: [
+        'Algunas de las utilizades de la amplia gama que nos ofrece angular fueron aplicadas en este proyecto, como por ejemplo routing para proveer al sitio de rutas mediante url, poder compartir productos y navegar sin recargar la página; se hizo uso de servicios que son los encargados del manejo de usuarios, autentificación, consultas a la API, incluso en el manejo de HTTP_Client que ofrece Angular; con la ayuda de interceptores se mantiene la cuenta abierta si el usuario esta registrado. De igual forma se usan otras utilidades como componentes, pipes, guardianes para dotar al proyecto de modularidad, especificidad en la gestión de la aplicación, en la experiencia de programación y experiencia de usuario.',
+        'En cuanto al funcionamiento de la tienda, podemos cargar productos de diferentes categorías, poder ver su detalle, crear, editar o eliminar productos, registrarnos como usuario o administradores, hacer autentificación y bajo el role poder acceder a un CMR, agregar productos al carrito de compras, tener sesiones abiertas persistentes en el navegador, proteger rutas privadas, tener un diseño responsivo, entre otras grandes funcionalidades. Para ver más te invito abrir la app en los enlaces descritos y poder interactúa con ella.'      ],
+      skills: [
+        'Angular',
+        'Typescript',
+        'APIRest',
+        'SCSS',
+        'Routing',
+        'LazyLouding',
+        'Modularizacion'
+      ],
+      link: [
+        'https://github.com/Diegogar10/store-with-angular',
+        'https://store-df.netlify.app/home'
+      ],
+    },
     {
       id: 1,
       title:'Aplicación de finanzas con ReactJS',
