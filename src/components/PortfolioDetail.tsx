@@ -41,10 +41,10 @@ const PortfolioDetail = () => {
         {link && 
         <>
           <h5>Ver más:</h5>
-          <a href={link[0]}>
+          <a target='_blank' href={link[0]}>
             <GitHubIcon/>
           </a>
-          <a href={link[1]}>
+          <a target='_blank' href={link[1]}>
             <OpenInNewIcon/>
           </a>
         </>
@@ -52,7 +52,7 @@ const PortfolioDetail = () => {
         {video && 
          <>
           <h5>Ver más:</h5>
-          <a href={video}>
+          <a target='_blank' href={video}>
             <YouTubeIcon/>
           </a>
          </> 

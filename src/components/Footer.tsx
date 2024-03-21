@@ -31,8 +31,8 @@ const Footer = () => {
       <section className='footer__contact'>
         <h3>Otros contactos</h3>
         <div>
-          <p><span>Email:</span>diegogar92@gmail.com</p>
-          <p><span>Cel:</span> &nbsp; +57 3006513359</p>
+          <p><span>Email:</span>diegogarcia.developer@gmail.com</p>
+          <p><span>Cel:</span> &nbsp; +57 3508239097</p>
         </div>
       </section>
     </footer>

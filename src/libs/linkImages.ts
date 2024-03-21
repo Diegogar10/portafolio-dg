@@ -43,6 +43,16 @@ import P8_Photo2 from '../assets/projects/Recipes/foto2.png';
 import P8_Photo3 from '../assets/projects/Recipes/foto3.png';
 import P8_Photo4 from '../assets/projects/Recipes/foto4.png';
 
+import P9_Photo1 from '../assets/projects/LandingAr/foto1.png';
+import P9_Photo2 from '../assets/projects/LandingAr/foto2.png';
+import P9_Photo3 from '../assets/projects/LandingAr/foto3.png';
+import P9_Photo4 from '../assets/projects/LandingAr/foto4.png';
+import P9_Photo5 from '../assets/projects/LandingAr/foto5.png';
+import P9_Photo6 from '../assets/projects/LandingAr/foto6.png';
+import P9_Photo7 from '../assets/projects/LandingAr/foto7.png';
+import P9_Photo8 from '../assets/projects/LandingAr/foto8.png';
+import P9_Photo9 from '../assets/projects/LandingAr/foto9.png';
+
 export {
   P1_Photo1,
   P1_Photo2,
@@ -81,5 +91,14 @@ export {
   P8_Photo2,
   P8_Photo3,
   P8_Photo4,
+  P9_Photo1,
+  P9_Photo2,
+  P9_Photo3,
+  P9_Photo4,
+  P9_Photo5,
+  P9_Photo6,
+  P9_Photo7,
+  P9_Photo8,
+  P9_Photo9,
 };
 

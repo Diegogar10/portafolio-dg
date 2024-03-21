@@ -6,7 +6,9 @@ import {
   P5_Photo1, P5_Photo2, P5_Photo3, P5_Photo4, P5_Photo5, P5_Photo6, P5_Photo7, P5_Photo8, 
   P6_Photo1, P6_Photo2, P6_Photo3,
   P7_Photo1,
-  P8_Photo1, P8_Photo2, P8_Photo3, P8_Photo4
+  P8_Photo1, P8_Photo2, P8_Photo3, P8_Photo4,
+  P9_Photo1, P9_Photo2, P9_Photo3, P9_Photo4,P9_Photo5, P9_Photo6, P9_Photo7, P9_Photo8, P9_Photo9,
+
 } from  './linkImages';
 
 import photoDefault from '../assets/projects/portada/random3.png';
@@ -28,7 +30,7 @@ export const dataHome:{
 } = {
   title: 'Acerca de mi',
   description:[
-    'Ingeniero en control, desarrollador Frontend y estudiante continuo en el desarrollo web (actualización de conocimientos, nuevas versiones, nuevas tecnologías), con 2 años de experiencia desarrollando de lado del cliente con ReactJS Y Angular. Desarrollo de app nativas con ReactNative, con más de 7 años laborando en el campo de la programación y automatización industrial, aplicando control a maquinaria industrial con programación en PLC, variadores de velocidad, driver de servomotores, comunicaciones industriales, interfaces HMI y SCADA. Conocimientos en diseño de interfaces y experiencia de usuario, manejo de herramientas de diseño como ilustrator y figma. Manejo de versiones y documentación con git y github.',
+    'Ingeniero en control, desarrollador FullStack y estudiante continuo en el desarrollo web (actualización de conocimientos, nuevas versiones, nuevas tecnologías), con 3 años de experiencia desarrollando de lado del cliente con ReactJS Y Angular. Desarrollo de app nativas con ReactNative, con más de 7 años laborando en el campo de la programación y automatización industrial, aplicando control a maquinaria industrial con programación en PLC, variadores de velocidad, driver de servomotores, comunicaciones industriales, interfaces HMI y SCADA. Conocimientos en diseño de interfaces y experiencia de usuario, manejo de herramientas de diseño como ilustrator y figma. Manejo de versiones y documentación con git y github.',
     'Una persona sociable, emprendedora, autodidacta, con capacidad para trabajar en equipo, gusto por nuevas herramientas de programación, con hobbys en el fútbol, en viajar y conocer nuevas culturas.'
   ]
 }
@@ -50,6 +52,46 @@ export const projectsHome: {
   projects: project[];
 } = {
   projects:[
+    {
+      id: 9,
+      title:'Landing Page que presenta un proyecto de contruccion de vivienda.',
+      images: [
+        P9_Photo1, 
+        P9_Photo2, 
+        P9_Photo3, 
+        P9_Photo4,
+        P9_Photo5, 
+        P9_Photo6, 
+        P9_Photo7, 
+        P9_Photo8, 
+        P9_Photo9, 
+      ],
+      age: '2024',
+      goal: 'Crear una página de destino altamente animada y creativa utilizando React, que presente de manera efectiva un proyecto de construcción de apartamentos. La elección de React se fundamenta en su capacidad para proporcionar animaciones e interacciones que mejoren significativamente la experiencia del usuario durante la presentación del proyecto.',
+      summary: 'Crear una página de destino utilizando React para presentar un proyecto de construcción de apartamentos. Se enfocará en la creatividad, la interactividad y la usabilidad para ofrecer una experiencia inmersiva al usuario.',
+      desciption: [
+        'El objetivo principal es desarrollar una página de destino dinámica y visualmente atractiva utilizando la tecnología React, con el fin de presentar de manera integral un proyecto de construcción de apartamentos.', 
+        'Esta landing page estará diseñada con un enfoque especial en la creatividad y la interactividad para ofrecer una experiencia inmersiva al usuario.', 
+        'Se buscará incorporar animaciones fluidas y elementos interactivos que resalten las características y ventajas del proyecto de manera clara y efectiva.',
+        'Además, se prestará una atención meticulosa a la usabilidad y la experiencia del usuario, asegurándose de que la navegación sea intuitiva y satisfactoria.',
+        'El objetivo es crear una plataforma que no solo informe sobre el proyecto de construcción, sino que también genere un alto nivel de compromiso y conexión emocional con los potenciales clientes, impulsando así la conversión y la participación activa en el proceso de venta.'
+      ],
+      skills: [
+        'Animación css',
+        'ReactJS',
+        'Sass',
+        'Javscript',
+        'Material Icon',
+        'UI/UX',
+        'HTML',
+        'React Context',
+        'React Portals'
+      ],
+      link: [
+        'https://github.com/Diegogar10/ar-test',
+        'https://arpage.netlify.app/'
+      ],
+    },
     {
       id: 8,
       title:'Aplicación web de recetas Favoritas con React',
